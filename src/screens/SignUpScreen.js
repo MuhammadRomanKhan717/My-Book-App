@@ -15,12 +15,12 @@ const SignUpScreen = ({ navigation }) => {
   return (
     <ImageBackground
       style={styles.mainView}
-      source={require("../../../assets/Book-Input.jpg")}
+      source={require("../../assets/Book-Input.jpg")}
     >
       <SafeAreaView>
         <Image
           style={styles.Image}
-          source={require("../../../assets/SignupIcon.png")}
+          source={require("../../assets/SignupIcon.png")}
         />
         <Text style={styles.header}>Create your acount</Text>
 

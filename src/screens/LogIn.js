@@ -19,13 +19,13 @@ const Home = ({ navigation }) => {
 
   return (
     <ImageBackground
-      source={require("../../../assets/Book-Input.jpg")}
+      source={require("../../assets/Book-Input.jpg")}
       style={styles.mainView}
     >
       <SafeAreaView>
         <Image
           style={styles.Image}
-          source={require("../../../assets/logIn.png")}
+          source={require("../../assets/logIn.png")}
         />
         <Text style={styles.Header}>Login your account</Text>
 

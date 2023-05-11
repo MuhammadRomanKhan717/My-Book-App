@@ -14,12 +14,12 @@ const ForgetPassword = ({ navigation }) => {
   return (
     <ImageBackground
       style={styles.mainView}
-      source={require("../../../assets/Book-Input.jpg")}
+      source={require("../../assets/Book-Input.jpg")}
     >
       <SafeAreaView>
         <Image
           style={styles.Image}
-          source={require("../../../assets/thinking.jpg")}
+          source={require("../../assets/thinking.jpg")}
         />
         <Text style={styles.verify}> Reser Password</Text>
         <TextInput

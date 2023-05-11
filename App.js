@@ -1,24 +1,24 @@
 import { StyleSheet, Image, Text, View } from "react-native";
 import { useEffect } from "react";
-import UseEffectHook from "./src/components/UseEffectHook";
-import AppIntroSlider from "react-native-app-intro-slider";
-import LogInForm from "./src/screens/LogInForm";
-import Counter from "./src/screens/Counter";
-import InputScreen from "./src/screens/InputScreen";
-import HomeYoutube from "./src/components/HomeYoutube";
+// import UseEffectHook from "./src/components/UseEffectHook";
+// import AppIntroSlider from "react-native-app-intro-slider";
+// import LogInForm from "./src/screens/LogInForm";
+// import Counter from "./src/screens/Counter";
+// import InputScreen from "./src/screens/InputScreen";
+// import HomeYoutube from "./src/components/HomeYoutube";
 // import SignUp from "./src/components/SignUp";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // import LoginScreen2 from "./src/components/FirstProject/LoginScreen2";
-import OnboardingScreen from "./src/components/FirstProject/OnboardingScreen";
+import OnboardingScreen from "./src/screens/OnboardingScreen";
 const Stack = createNativeStackNavigator();
-import SectionList from "./src/components/SectionList";
-import Home from "./src/components/FirstProject/Home";
-import SignUpScreen from "./src/components/FirstProject/SignUpScreen";
-import LogIn from "./src/components/FirstProject/LogIn";
-import ForgetPassword from "./src/components/FirstProject/ForgetPassword";
-import BookCollection from "./src/components/FirstProject/BookCollection";
-import SplashScreen from "./src/components/FirstProject/SplashScreen";
+// import SectionList from "./src/components/SectionList";
+import Home from "./src/screens/Home";
+import SignUpScreen from "./src/screens/SignUpScreen";
+import LogIn from "./src/screens/LogIn";
+import ForgetPassword from "./src/screens/ForgetPassword";
+import BookCollection from "./src/screens/BookCollection";
+import SplashScreen from "./src/screens/SplashScreen";
 const App = () => {
   return (
     // <View>

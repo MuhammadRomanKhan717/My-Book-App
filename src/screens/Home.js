@@ -15,14 +15,14 @@ const LogIn = ({ navigation }) => {
   // const age = 23;
   return (
     <ImageBackground
-      source={require("../../../assets/Book-Input.jpg")}
+      source={require("../../assets/Book-Input.jpg")}
       style={styles.mainView}
     >
       {/* <ScrollView> */}
       <SafeAreaView>
         <Image
           style={styles.Image}
-          source={require("../../../assets/mainPage.jpg")}
+          source={require("../../assets/mainPage.jpg")}
         />
         <Text style={styles.wellCome}>WellCome to Books Collection</Text>
         <TouchableOpacity

@@ -20,7 +20,7 @@ const OnboardingScreen = ({ navigation }) => {
           image: (
             <Image
               style={styles.Image}
-              source={require("../../../assets/bookCollection.jpg")}
+              source={require("../../assets/Collection.jpg")}
             />
           ),
           title: "Collection of your favourite Books ",
@@ -33,7 +33,7 @@ const OnboardingScreen = ({ navigation }) => {
           image: (
             <Image
               style={styles.freeBook}
-              source={require("../../../assets/freeBookpng.png")}
+              source={require("../../assets/freeBookpng.png")}
             />
           ),
           title: "Totaly free of Cost",
@@ -46,7 +46,7 @@ const OnboardingScreen = ({ navigation }) => {
           image: (
             <Image
               style={styles.bookAccount}
-              source={require("../../../assets/bookAccount.jpg")}
+              source={require("../../assets/bookAccount.jpg")}
             />
           ),
           title: "login your account",
@@ -58,7 +58,7 @@ const OnboardingScreen = ({ navigation }) => {
           image: (
             <Image
               style={styles.signup}
-              source={require("../../../assets/Booksignup.jpg")}
+              source={require("../../assets/Booksignup.jpg")}
             />
           ),
           title: "SignUp your account",
@@ -72,7 +72,7 @@ const OnboardingScreen = ({ navigation }) => {
           image: (
             <Image
               style={styles.letsStart}
-              source={require("../../../assets/letsStart.jpg")}
+              source={require("../../assets/letsStart.jpg")}
             />
           ),
           title: "Let's Start",
