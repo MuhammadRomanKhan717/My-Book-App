@@ -13,10 +13,6 @@ import { TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = ({ navigation }) => {
-  // useEffect(() => {
-  //   navigation.nagate("OnboardingScreen");
-  // }, []);
-
   return (
     <ImageBackground
       source={require("../../assets/Book-Input.jpg")}
@@ -78,7 +74,6 @@ export default Home;
 const styles = StyleSheet.create({
   mainView: {
     flex: 1,
-
     paddingHorizontal: 20,
     justifyContent: "center",
   },
@@ -108,6 +103,7 @@ const styles = StyleSheet.create({
   input: {
     height: 50,
     marginTop: 5,
+
     borderRadius: 10,
     borderWidth: 1,
     paddingHorizontal: 7,

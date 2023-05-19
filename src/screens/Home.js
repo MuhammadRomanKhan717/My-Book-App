@@ -10,9 +10,7 @@ import {
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const LogIn = ({ navigation }) => {
-  // const name = "roman";
-  // const age = 23;
+const WellcomeScreen = ({ navigation }) => {
   return (
     <ImageBackground
       source={require("../../assets/Book-Input.jpg")}
@@ -44,7 +42,7 @@ const LogIn = ({ navigation }) => {
   );
 };
 
-export default LogIn;
+export default WellcomeScreen;
 
 const styles = StyleSheet.create({
   mainView: {

@@ -1,15 +1,17 @@
 {
   "expo": {
     "name": "My Book App",
-    "slug": "my-app",
+    "slug": "My Book App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Hammad.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/bookIcon.json",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "hight":"300",
+      "width":"300"
     },
     "assetBundlePatterns": [
       "**/*"

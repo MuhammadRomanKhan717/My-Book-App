@@ -10,7 +10,12 @@ const SplashScreen = ({ navigation }) => {
   }, []);
 
   return (
-    <Lottie source={require("../../assets/splash.json")} autoPlay loop={true} />
+    <Lottie
+      source={require("../../assets/splash.json")}
+      // source={require("../../assets/bookIcon.json")}
+      autoPlay
+      loop={false}
+    />
   );
 };
 
