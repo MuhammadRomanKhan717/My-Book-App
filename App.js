@@ -12,29 +12,34 @@ import BookCollection from "./src/screens/BookCollection";
 import SplashScreen from "./src/screens/SplashScreen";
 import LogIn from "./src/screens/LogIn,";
 import BookDetail from "./src/screens/BookDetail";
+import CartComponents from "./src/components/CartComponent";
+import { Counter } from "./src/screens/Counter";
+import { Provider } from "react-redux";
+import store from "./src/components/redux/Store";
 const App = () => {
   return (
     // <View>
-    // {/* <UseEffectHook /> */}
-    // {/* <SectionList /> */}
-
+    //   {/* <UseEffectHook /> */}
+    //   {/* <SectionList /> */}
+    //   <CartComponents />
     // </View>
-
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{ headerShown: false }}
-        initialRouteName="splash"
-      >
-        <Stack.Screen name="splash" component={SplashScreen} />
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Login" component={LogIn} />
-        <Stack.Screen name="BookList" component={BookCollection} />
-        <Stack.Screen name="Forget" component={ForgetPassword} />
-        <Stack.Screen name="SignUp" component={SignUpScreen} />
-        <Stack.Screen name="Borrding" component={OnboardingScreen} />
-        <Stack.Screen name="bookDetail" component={BookDetail} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{ headerShown: false }}
+          initialRouteName="splash"
+        >
+          <Stack.Screen name="splash" component={SplashScreen} />
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Login" component={LogIn} />
+          <Stack.Screen name="BookList" component={BookCollection} />
+          <Stack.Screen name="Forget" component={ForgetPassword} />
+          <Stack.Screen name="SignUp" component={SignUpScreen} />
+          <Stack.Screen name="Borrding" component={OnboardingScreen} />
+          <Stack.Screen name="bookDetail" component={BookDetail} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 };
 

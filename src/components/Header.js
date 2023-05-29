@@ -1,5 +1,6 @@
 import { StyleSheet, TouchableOpacity, Text, View } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import {
   MaterialIcons,
   MaterialCommunityIcons,
@@ -8,6 +9,12 @@ import {
 
 const Header = ({ navigation, hideBookArrow }) => {
   console.log("asdsf", hideBookArrow);
+  const cartData = useSelector((state) => state.reducer);
+  const [cartItems, setcartItems] = useState(0);
+  console.warn(cartData);
+  useEffect(() => {
+    setcartItems(cartItems.length);
+  }, [cartData]);
   return (
     <View>
       <View style={styles.header}>
@@ -33,9 +40,12 @@ const Header = ({ navigation, hideBookArrow }) => {
               onPress={() => navigation.navigate("Home")}
             />
           </TouchableOpacity>
-          <TouchableOpacity>
-            <Entypo name="shopping-cart" size={24} color="green" />
-          </TouchableOpacity>
+          <View style={styles.textcart}>
+            <TouchableOpacity>
+              <Text style={styles.text}>{cartItems}</Text>
+              <Entypo name="shopping-cart" size={24} color="green" />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </View>
@@ -64,5 +74,11 @@ const styles = StyleSheet.create({
   cart: {
     flexDirection: "row",
     justifyContent: "space-between",
+  },
+  textcart: {
+    flexDirection: "row",
+  },
+  text: {
+    fontSize: 16,
   },
 });

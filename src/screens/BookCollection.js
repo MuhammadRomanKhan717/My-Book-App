@@ -15,20 +15,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import BookCard from "../components/BookCard";
 import Header from "../components/Header";
 
-//   {
-//     id: "1",
-//     title: "First Item",
-//   },
-//   {
-//     id: "2",
-//     title: "Second Item",
-//   },
-//   {
-//     id: "3",
-//     title: "Third Item",
-//   },
-// ];
-
 const BookCollection = ({ navigation }) => {
   const [inputSearch, SetInputSearch] = useState([]);
 
@@ -78,6 +64,7 @@ const BookCollection = ({ navigation }) => {
         style={{ marginBottom: "30%" }}
         renderItem={({ item, index }) => (
           // call the BookCard screen
+
           <BookCard item={item} index={index} navigation={navigation} />
         )}
       />

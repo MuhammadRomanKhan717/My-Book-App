@@ -10,10 +10,14 @@ import {
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "../components/Header";
-
+import { useDispatch } from "react-redux";
 const BookDetail = (props) => {
-  console.log("only data....", props?.route?.params?.item);
+  const dispatch = useDispatch();
+  // console.log("only data....", props?.route?.params?.item);
   let data = props?.route?.params?.item;
+  const handeAddToCart = (data) => {
+    console.warn("called", data.title);
+  };
   return (
     <SafeAreaView style={styles.mainView}>
       <Header navigation={props.navigation} hideBookArrow={true} />
@@ -49,19 +53,19 @@ const BookDetail = (props) => {
         <TouchableOpacity
           onPress={() => Linking.openURL(data.buy_links[0].url)}
         >
-          <Text style={styles.link}> From Amazon</Text>
+          <Text style={styles.link}>By From Amazon</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => Linking.openURL(data.buy_links[1].url)}
         >
-          <Text style={styles.link}>From Apple Books</Text>
+          <Text style={styles.link}> ByFrom Apple Books</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => Linking.openURL(data.buy_links[2].url)}
         >
-          <Text style={styles.link}>From Barnes and Noble</Text>
+          <Text style={styles.link}>By From Barnes and Noble</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -73,10 +77,14 @@ const BookDetail = (props) => {
         <TouchableOpacity
           onPress={() => Linking.openURL(data.buy_links[4].url)}
         >
-          <Text style={styles.link}>From Bookshop</Text>
+          <Text style={styles.link}>By From Bookshop</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => handeAddToCart(data)}
+          // onPress={() => navigation.navigate("CardComponents")}
+        >
           <Text style={styles.buttonText}>Add to Cart</Text>
         </TouchableOpacity>
       </View>
