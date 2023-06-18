@@ -4,15 +4,21 @@ import {
   StyleSheet,
   Text,
   Touchable,
+  ActivityIndicator,
   Image,
   TouchableOpacity,
   View,
 } from "react-native";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = ({ navigation }) => {
+  const [show, setShow] = useState(false);
+  const displayLoader = () => {
+    setShow(true);
+  };
+
   return (
     <ImageBackground
       source={require("../../assets/Book-Input.jpg")}
@@ -45,6 +51,7 @@ const Home = ({ navigation }) => {
           title="Forget Password"
           onPress={() => navigation.navigate("Forget")}
         />
+        <ActivityIndicator size="large" color="lightgreen" animating={show} />
         <TouchableOpacity
           style={[styles.button]}
           onPress={() => navigation.navigate("BookList")}

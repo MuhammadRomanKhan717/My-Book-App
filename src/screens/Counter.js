@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 
-import { increment, decrement } from "../components/redux/counterReducer";
+import { increment, decrement } from "../redux/cartReducer";
 
 export function Counter() {
   const count = useSelector((state) => state.counter.value);

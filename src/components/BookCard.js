@@ -8,7 +8,6 @@ const BookCard = ({ item, index, navigation }) => {
         style={styles.Maincard}
         onPress={() => navigation.navigate("bookDetail", { item: item })}
       >
-        {console.log(item.title, "indddddx", index)}
         <Image style={styles.Image} source={{ uri: item.book_image }} />
 
         <View style={styles.bookText}>

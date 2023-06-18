@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  ActivityIndicator,
   TouchableOpacity,
   View,
 } from "react-native";
@@ -29,7 +30,7 @@ const BookCollection = ({ navigation }) => {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log("dddddddd", JSON.stringify(data.results.books));
+        // console.log("dddddddd", JSON.stringify(data.results.books));
         setData(data?.results?.books);
       });
   };
@@ -107,7 +108,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   input: {
-    fontSize: 25,
+    fontSize: 20,
+    color: "green",
     height: 50,
     width: "80%",
     paddingLeft: "2%",

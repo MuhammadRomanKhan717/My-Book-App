@@ -4,19 +4,22 @@ import {
   Text,
   View,
   Linking,
+  Alert,
   TouchableOpacity,
   ScrollView,
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "../components/Header";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Add_To_Cart } from "../redux/cartReducer";
 const BookDetail = (props) => {
   const dispatch = useDispatch();
+  const count = useSelector((state) => state.cart.value);
   // console.log("only data....", props?.route?.params?.item);
   let data = props?.route?.params?.item;
   const handeAddToCart = (data) => {
-    console.warn("called", data.title);
+    dispatch(Add_To_Cart(data));
   };
   return (
     <SafeAreaView style={styles.mainView}>
@@ -83,7 +86,6 @@ const BookDetail = (props) => {
         <TouchableOpacity
           style={styles.button}
           onPress={() => handeAddToCart(data)}
-          // onPress={() => navigation.navigate("CardComponents")}
         >
           <Text style={styles.buttonText}>Add to Cart</Text>
         </TouchableOpacity>

@@ -9,11 +9,11 @@ import {
 
 const Header = ({ navigation, hideBookArrow }) => {
   console.log("asdsf", hideBookArrow);
-  const cartData = useSelector((state) => state.reducer);
+  const cartData = useSelector((state) => state.cart.value);
   const [cartItems, setcartItems] = useState(0);
-  console.warn(cartData);
+  // console.warn(cartData.length);
   useEffect(() => {
-    setcartItems(cartItems.length);
+    // setcartItems(cartItems.length);
   }, [cartData]);
   return (
     <View>
@@ -41,9 +41,14 @@ const Header = ({ navigation, hideBookArrow }) => {
             />
           </TouchableOpacity>
           <View style={styles.textcart}>
-            <TouchableOpacity>
-              <Text style={styles.text}>{cartItems}</Text>
-              <Entypo name="shopping-cart" size={24} color="green" />
+            <TouchableOpacity onPress={() => navigation.navigate("cartScreen")}>
+              <Text style={styles.text}>{cartData.length}</Text>
+              <Entypo
+                name="shopping-cart"
+                size={24}
+                color="green"
+                style={styles.shopingcart}
+              />
             </TouchableOpacity>
           </View>
         </View>
@@ -78,7 +83,19 @@ const styles = StyleSheet.create({
   textcart: {
     flexDirection: "row",
   },
+  shopingcart: { position: "absolute" },
   text: {
-    fontSize: 16,
+    fontSize: 22,
+    // position: "absolute",
+    height: 25,
+    width: 19,
+    borderWidth: 1,
+    borderRadius: 50,
+    backgroundColor: "grey",
+    right: 5,
+    bottom: 12,
+    alignItems: "center",
+    justifyContent: "center",
+    fontWeight: "600",
   },
 });

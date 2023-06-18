@@ -15,7 +15,8 @@ import BookDetail from "./src/screens/BookDetail";
 import CartComponents from "./src/components/CartComponent";
 import { Counter } from "./src/screens/Counter";
 import { Provider } from "react-redux";
-import store from "./src/components/redux/Store";
+import store from "./src/redux/Store";
+import CartScreen from "./src/screens/CartScreen";
 const App = () => {
   return (
     // <View>
@@ -37,6 +38,7 @@ const App = () => {
           <Stack.Screen name="SignUp" component={SignUpScreen} />
           <Stack.Screen name="Borrding" component={OnboardingScreen} />
           <Stack.Screen name="bookDetail" component={BookDetail} />
+          <Stack.Screen name="cartScreen" component={CartScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

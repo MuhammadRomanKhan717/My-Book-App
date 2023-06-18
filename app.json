@@ -7,7 +7,7 @@
     "icon": "./assets/Hammad.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/icon.png",
+      "image": "./assets/bookicon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff",
       "hight":"300",
