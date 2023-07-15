@@ -79,7 +79,30 @@ If you have not account then create your account.
 
 </tr></table>
 
+### Detail screen
 
+In Detail, the screen have All details about the selected book and their purchase link you can purchase that book directly from them. When users click on cart button then the book add to the cart.
+<table>
+ <tr>
+  <td>Detail screen </td>
+ </tr>
+ <tr>
+<td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/7788b6d1-1f26-4605-8757-04defb390bf9" alt="Drawing"  width="150" height="300"/> </td>
+
+</tr></table>
+
+### Cart screen
+
+In Cart screen have all the books that were added, we can delete them from the cart to click delete Icon.
+And also increase or decrease the Quantity of books.
+<table>
+ <tr>
+  <td>Cart screen</td>
+ </tr>
+ <tr>
+<td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/7788b6d1-1f26-4605-8757-04defb390bf9" alt="Drawing"  width="150" height="300"/> </td>
+
+</tr></table>
 
 
 
