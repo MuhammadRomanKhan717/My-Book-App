@@ -8,7 +8,7 @@ import {
 } from "@expo/vector-icons";
 
 const Header = ({ navigation, hideBookArrow }) => {
-  console.log("asdsf", hideBookArrow);
+  // console.log("asdsf", hideBookArrow);
   const cartData = useSelector((state) => state.cart.value);
   const [cartItems, setcartItems] = useState(0);
   // console.warn(cartData.length);
@@ -23,7 +23,7 @@ const Header = ({ navigation, hideBookArrow }) => {
             <TouchableOpacity>
               <MaterialIcons
                 name="arrow-back"
-                size={24}
+                size={28}
                 color="green"
                 onPress={() => navigation.goBack()}
               />
@@ -35,22 +35,27 @@ const Header = ({ navigation, hideBookArrow }) => {
           <TouchableOpacity>
             <MaterialCommunityIcons
               name="logout"
-              size={24}
+              size={28}
               color="green"
               onPress={() => navigation.navigate("Home")}
             />
           </TouchableOpacity>
           <View style={styles.textcart}>
-            <TouchableOpacity onPress={() => navigation.navigate("cartScreen")}>
-              <Text style={styles.text}>{cartData.length}</Text>
-              <Entypo
-                name="shopping-cart"
-                size={24}
-                color="green"
-                style={styles.shopingcart}
-              />
-            </TouchableOpacity>
+            <Text
+              style={styles.text}
+              onPress={() => navigation.navigate("cartScreen")}
+            >
+              {cartData.length}
+            </Text>
           </View>
+          <TouchableOpacity onPress={() => navigation.navigate("cartScreen")}>
+            <Entypo
+              name="shopping-cart"
+              size={26}
+              color="green"
+              style={styles.shopingcart}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -79,23 +84,26 @@ const styles = StyleSheet.create({
   cart: {
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
   },
   textcart: {
-    flexDirection: "row",
+    borderWidth: 2,
+    borderRadius: 50,
+    backgroundColor: "lightgreen",
+    height: 30,
+    width: 28,
+    position: "absolute",
+    right: 11,
+    top: -6,
+    zIndex: 1,
   },
-  shopingcart: { position: "absolute" },
+  shopingcart: {
+    // zIndex: -2,
+    marginLeft: 20,
+  },
   text: {
     fontSize: 22,
-    // position: "absolute",
-    height: 25,
-    width: 19,
-    borderWidth: 1,
-    borderRadius: 50,
-    backgroundColor: "grey",
-    right: 5,
-    bottom: 12,
-    alignItems: "center",
-    justifyContent: "center",
+    left: 4,
     fontWeight: "600",
   },
 });

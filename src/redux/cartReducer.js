@@ -11,7 +11,7 @@ export const cartSlice = createSlice({
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-      console.log("hhh...////", actions.payload);
+      // console.log("hhh...////", actions.payload);
       let filter = state.value.filter((item) => {});
       state.value.push(actions.payload);
     },

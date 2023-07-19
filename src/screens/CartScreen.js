@@ -11,7 +11,7 @@ const CartScreen = (props) => {
   const arr = [...new Set(selector)];
   //we are create duplicate array to remove the duplicate items from
   // the cart screen. it's easy to use but we try other method
-  console.log("length....", selector.length);
+  // console.log("length....", selector.length);
   // useEffect(() => {}, []);
 
   return (

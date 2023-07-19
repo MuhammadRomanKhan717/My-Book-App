@@ -56,20 +56,20 @@ export default BookCard;
 const styles = StyleSheet.create({
   Maincard: {
     marginTop: 15,
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: "darkgreen",
     marginHorizontal: 13,
     flexDirection: "row",
   },
   Text: {
     color: "green",
-    fontSize: 14,
+    fontSize: 16,
     paddingStart: 4,
     maxWidth: 100,
   },
   heading: {
     color: "green",
-    fontSize: 16,
+    fontSize: 18,
     paddingStart: 4,
     fontWeight: "900",
   },
@@ -84,7 +84,5 @@ const styles = StyleSheet.create({
     maxWidth: "61%",
     justifyContent: "space-evenly",
     paddingStart: 12,
-    // fontSize: 16,
-    // backgroundColor: "gray",
   },
 });

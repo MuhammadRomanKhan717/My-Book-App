@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
   },
 
   header: {
+    paddingBottom: 20,
     fontSize: 22,
     alignSelf: "center",
   },
@@ -88,6 +89,8 @@ const styles = StyleSheet.create({
     marginTop: 5,
     borderRadius: 10,
     borderWidth: 1,
+    fontSize: 18,
+    fontWeight: "bold",
     paddingHorizontal: 7,
     borderColor: "blue",
   },
@@ -105,7 +108,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     paddingBottom: 4,
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: "600",
     color: "white",
   },
@@ -114,6 +117,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 500,
     marginTop: 8,
-    color: "#00FFFF",
+    color: "lightblue",
   },
 });

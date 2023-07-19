@@ -108,6 +108,7 @@ const styles = StyleSheet.create({
     color: "#00FFFF",
   },
   input: {
+    fontSize: 16,
     height: 50,
     marginTop: 5,
 
