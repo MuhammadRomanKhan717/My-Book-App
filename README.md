@@ -5,8 +5,26 @@ its totally free of cost.
 ## File Structure
 * assets
 * src
-  * screens
+   * components
+      * BookCart
+      * CartComponent
+      * Header
+  * redux
+    * cartReducer
+    * Store
+  * Screens
+     * Home
+     * BookCollection
+     * BookDetail
+     * CartScreen
+     * Counter
+     * FrogetPassword
+     * LogIn
+     * OnboardingScreen
+     * SighnUpSscreen
+     * SplashScreen
 
+     
  ## Environment setup for windows users
  * install [Node 12 LTS](https://nodejs.org/en/)
  * install [Vs code](https://code.visualstudio.com/)
@@ -84,11 +102,13 @@ If you have not account then create your account.
 In Detail, the screen have All details about the selected book and their purchase link you can purchase that book directly from them. When users click on cart button then the book add to the cart.
 <table>
  <tr>
+
   <td>Detail screen </td>
+    <td>Detail screen </td>
  </tr>
  <tr>
-<td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/7788b6d1-1f26-4605-8757-04defb390bf9" alt="Drawing"  width="150" height="300"/> </td>
-
+<td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/c84a7165-e9c1-44cd-bfb2-5077f15c889c" alt="Drawing"  width="150" height="300"/> </td>
+<td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/73d5b0e4-3aae-40d4-8b19-54679b125b18" alt="Drawing"  width="150" height="300"/> </td>
 </tr></table>
 
 ### Cart screen
@@ -100,9 +120,11 @@ And also increase or decrease the Quantity of books.
   <td>Cart screen</td>
  </tr>
  <tr>
-<td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/7788b6d1-1f26-4605-8757-04defb390bf9" alt="Drawing"  width="150" height="300"/> </td>
+<td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/e28ca824-2c6d-4218-b141-d6a0e0fa3db8" alt="Drawing"  width="150" height="300"/> </td>
 
 </tr></table>
+
+
 
 
 
