@@ -5,8 +5,26 @@ its totally free of cost.
 ## File Structure
 * assets
 * src
-  * screens
+   * components
+      * BookCart
+      * CartComponent
+      * Header
+  * redux
+    * cartReducer
+    * Store
+  * Screens
+     * Home
+     * BookCollection
+     * BookDetail
+     * CartScreen
+     * Counter
+     * FrogetPassword
+     * LogIn
+     * OnboardingScreen
+     * SighnUpSscreen
+     * SplashScreen
 
+     
  ## Environment setup for windows users
  * install [Node 12 LTS](https://nodejs.org/en/)
  * install [Vs code](https://code.visualstudio.com/)
