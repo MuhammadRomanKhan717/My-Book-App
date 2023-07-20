@@ -12,7 +12,7 @@ import { AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
 
 const CartComponents = ({ item, index, navigation }) => {
   const [refreshing, setRefreshing] = React.useState(true);
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   // const uniqueNames = Array.from(new Set(names));
 
   const onRefresh = React.useCallback(() => {
