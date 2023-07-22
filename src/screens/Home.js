@@ -34,7 +34,7 @@ const WellcomeScreen = ({ navigation }) => {
           style={[styles.button]}
           onPress={() => navigation.navigate("SignUp")}
         >
-          <Text style={[styles.buttonText]}>Singup</Text>
+          <Text style={[styles.buttonText]}>SingUp</Text>
         </TouchableOpacity>
       </SafeAreaView>
       {/* </ScrollView> */}

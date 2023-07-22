@@ -24,7 +24,7 @@ const OnboardingScreen = ({ navigation }) => {
             />
           ),
           title: "Collection of your favourite Books ",
-          subtitle: "choose the bast books",
+          subtitle: "choose the bast books.",
         },
 
         {
@@ -37,7 +37,7 @@ const OnboardingScreen = ({ navigation }) => {
             />
           ),
           title: "Totaly free of Cost",
-          subtitle: " these app..! for free  of every type of books",
+          subtitle: " these app..! for free  of every type of books.",
         },
 
         {
@@ -63,7 +63,7 @@ const OnboardingScreen = ({ navigation }) => {
           ),
           title: "SignUp your account",
           subtitle:
-            "If you haven't your account then create it..! your account",
+            "If you haven't your account then create it..! your account.",
         },
 
         {

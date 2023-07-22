@@ -6,35 +6,42 @@ import {
   View,
   Image,
   ImageBackground,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native";
 
 const ForgetPassword = ({ navigation }) => {
   return (
-    <ImageBackground
+    <KeyboardAvoidingView
       style={styles.mainView}
-      source={require("../../assets/Book-Input.jpg")}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
-      <SafeAreaView>
-        <Image
-          style={styles.Image}
-          source={require("../../assets/thinking.jpg")}
-        />
-        <Text style={styles.verify}> Reser Password</Text>
-        <TextInput
-          style={styles.input}
-          keyboardType="numbers-and-punctuation"
-          placeholder="Enter Your Email"
-        />
-        <TouchableOpacity
-          style={[styles.button]}
-          onPress={() => navigation.navigate("Login")}
-        >
-          <Text style={[styles.buttonText]}>Reset Password</Text>
-        </TouchableOpacity>
-      </SafeAreaView>
-    </ImageBackground>
+      <ImageBackground
+        style={styles.ImageBackground}
+        source={require("../../assets/Book-Input.jpg")}
+      >
+        <SafeAreaView>
+          <Image
+            style={styles.Image}
+            source={require("../../assets/thinking.jpg")}
+          />
+          <Text style={styles.verify}> Reser Password</Text>
+          <TextInput
+            style={styles.input}
+            keyboardType="numbers-and-punctuation"
+            placeholder="Enter Your Email"
+          />
+          <TouchableOpacity
+            style={[styles.button]}
+            onPress={() => navigation.navigate("Login")}
+          >
+            <Text style={[styles.buttonText]}>Reset Password</Text>
+          </TouchableOpacity>
+        </SafeAreaView>
+      </ImageBackground>
+    </KeyboardAvoidingView>
   );
 };
 
@@ -43,8 +50,11 @@ export default ForgetPassword;
 const styles = StyleSheet.create({
   mainView: {
     flex: 1,
-    paddingHorizontal: 15,
+    paddingVertical: 15,
+  },
+  ImageBackground: {
     justifyContent: "center",
+    flex: 1,
   },
   verify: {
     fontSize: 22,
@@ -62,7 +72,8 @@ const styles = StyleSheet.create({
     marginTop: 5,
     borderRadius: 10,
     borderWidth: 1,
-    paddingHorizontal: 7,
+    paddingLeft: 10,
+    marginHorizontal: 20,
     borderColor: "blue",
   },
   button: {
@@ -74,7 +85,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     borderRadius: 15,
     borderWidth: 1,
-    paddingHorizontal: 7,
+    marginHorizontal: 20,
     borderColor: "white",
   },
   buttonText: {
