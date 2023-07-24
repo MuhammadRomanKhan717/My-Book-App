@@ -10,15 +10,11 @@ import { useState } from "react";
 import React from "react";
 import { AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
 
-const CartComponents = ({ item, index, navigation }) => {
+const CartComponents = ({ item, index, navigation, onDelete }) => {
   const [refreshing, setRefreshing] = React.useState(true);
   const [quantity, setQuantity] = useState(1);
   // const uniqueNames = Array.from(new Set(names));
 
-  const onRefresh = React.useCallback(() => {
-    setRefreshing(true);
-    // console.warn(item.title);
-  }, []);
   return (
     <SafeAreaView>
       <View style={{ padding: 6 }}>
@@ -49,7 +45,7 @@ const CartComponents = ({ item, index, navigation }) => {
               <View style={styles.Delete}>
                 <TouchableOpacity
                   onPress={() => {
-                    onRefresh();
+                    onDelete(index);
                   }}
                 >
                   <MaterialCommunityIcons

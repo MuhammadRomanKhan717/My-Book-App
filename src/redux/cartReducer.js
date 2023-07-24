@@ -15,12 +15,10 @@ export const cartSlice = createSlice({
       let filter = state.value.filter((item) => {});
       state.value.push(actions.payload);
     },
-    Remove_From_Cart: (state) => {
-      state.value -= 1;
+    Remove_From_Cart: (state, actions) => {
+      state.value.splice(actions.payload, 1);
     },
-    Cart_Qauntity: (index) => {
-      index.value = +1;
-    },
+    Cart_Qauntity: (index) => {},
   },
 });
 
