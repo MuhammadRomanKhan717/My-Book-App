@@ -1,6 +1,12 @@
 # My Book App
 In this app search your favourite books and study its.
 its totally free of cost.
+It's a books app where you can search for multiple books and purchase them.
+I use React-Redux for state management
+
+#### watch the below video
+
+https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/beceecae-c4b4-4565-bde7-8aff350b9e01
 
 ## File Structure
 * assets
@@ -49,7 +55,8 @@ When App is open the Splash screen appears.
  </tr>
  <tr>
 
-   <td> <img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/beffc2e4-62d8-4d2d-b467-63c5893cd827" alt="Drawing"  width="150" height="300"/> </td>
+   <td> <img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/4a77be83-8ddb-43e1-9f0c-2ecf929d0f6d
+" alt="Drawing"  width="150" height="300"/> </td>
    
 </tr></table>
    
@@ -123,6 +130,15 @@ And also increase or decrease the Quantity of books.
 <td><img src="https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/e28ca824-2c6d-4218-b141-d6a0e0fa3db8" alt="Drawing"  width="150" height="300"/> </td>
 
 </tr></table>
+
+
+
+
+
+
+
+
+
 
 
 
