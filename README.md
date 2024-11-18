@@ -31,20 +31,20 @@ https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/beceecae-c4b
      * SplashScreen
 
      
- ## Environment setup for windows users
+ ## Environment setup for Windows users
  * install [Node 12 LTS](https://nodejs.org/en/)
  * install [Vs code](https://code.visualstudio.com/)
  * use npm to install the Expo CLI command line utility  
   `npm install -g expo-cli`  
  
-## How to run the app ?
+## How to run the app?
 1. clone the code
 2. Open in Vs code 
    1. Open Vs code Terminal and run:  
    `npm install`
    2. When install node_modules then run  
    `npm start`
-3. Open expo app in your mobile and scan the QR code to run the app.
+3. Open the expo app on your mobile and scan the QR code to run the app.
 
 ## App Screenshot
 ### Splash Screen
