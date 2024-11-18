@@ -1,17 +1,17 @@
 # My Book App
-In this app search your favourite books and study its.
-its totally free of cost.
+In this app search for your favorite books and study them.
+it's totally free of cost.
 It's a books app where you can search for multiple books and purchase them.
 I use React-Redux for state management
 
-#### watch the below video
+#### watch the video below
 
 https://github.com/MuhammadRomanKhan717/My-Book-App/assets/86658178/beceecae-c4b4-4565-bde7-8aff350b9e01
 
 ## File Structure
 * assets
 * src
-   * components
+   * Components
       * BookCart
       * CartComponent
       * Header
